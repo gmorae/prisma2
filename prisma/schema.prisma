@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model migration {
+  applied            Int
+  database_migration String
+  datamodel          String
+  datamodel_steps    String
+  errors             String
+  finished_at        DateTime?
+  name               String
+  revision           Int       @default(autoincrement()) @id
+  rolled_back        Int
+  started_at         DateTime
+  status             String
+
+  @@map("_migration")
+}
+
+model user {
+  email String  @unique
+  id    Int     @default(autoincrement()) @id
+  name  String?
+}
