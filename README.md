@@ -11,4 +11,4 @@ Prisma is a **database toolkit** that consists of these tools:
 
 The fastest way to get started with Prisma is by following the [**Quickstart (5 min)**](https://www.prisma.io/docs/getting-started/quickstart).
 
-The Quickstart is based on a preconfigured SQLite database. You can also get started with your own database (PostgreSQL and MySQL) by following one of these guides:
+The Quickstart is based on a preconfigured SQLite database. You can also get started with your own database (PostgreSQL and MySQL).
